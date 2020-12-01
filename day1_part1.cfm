@@ -6,8 +6,9 @@ sum = 2020;
 
 pairProductOfNumber = (entries, number) => {
     for (var entry in arguments.entries) {
-        if (arguments.entries.find(arguments.number - entry)) {
-            return entry * (arguments.number - entry);
+        var check = arguments.number - entry;
+        if (arguments.entries.find(check)) {
+            return entry * check;
             break;
         }
     }
