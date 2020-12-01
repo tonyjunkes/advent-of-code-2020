@@ -4,16 +4,12 @@ input = [408,1614,1321,1028,1018,2008,1061,1433,1434,1383,1645,1841,1594,1218,17
 
 sum = 2020;
 
-pairProductOfNumber = (entries, number) => {
-    for (var entry in arguments.entries) {
-        var check = arguments.number - entry;
-        if (arguments.entries.find(check)) {
-            return entry * check;
-            break;
-        }
-    }
+pairProductOfNumber = (entries, sum) => {
+    return arguments.entries
+        .filter((entry) => entries.find(sum - arguments.entry))
+        .reduce((result, item) => arguments.result * arguments.item, 1);
 };
 
-writeDump(pairProductOfNumber(input, sum))
+writeDump(pairProductOfNumber(input, sum));
 
 </cfscript>
